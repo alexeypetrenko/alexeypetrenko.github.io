@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+  </head>
+  <body>
+<script>
+  var searchParams = new URLSearchParams(window.location.search);
+  if (searchParams.has('to')) {
+    window.location = searchParams.get('to')
+  } else {
+    document.body.innerText = "Missing required parameter 'to'"
+  }
+</script>
+  </body>
+</html>
