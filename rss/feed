@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0" xml:base="https://risky.biz/feeds/risky-business">
+  <channel>
+    <title>Title</title>
+    <description>Description</description>
+    <link>https://example.com/</link>
+    <language>en</language>
+    <atom:link href="https://example.com/" rel="self" type="application/rss+xml"/>
+    <pubDate>Mon, 27 Aug 2018 06:07:04 +0000</pubDate>
+    <lastBuildDate>Mon, 27 Aug 2018 06:07:04 +0000</lastBuildDate>
+    <item>
+      <title>Click me!</title>
+      <pubDate>Mon, 27 Aug 2018 00:00:00 +0000</pubDate>
+      <link>javascript://2example.com/%0aalert('XSS%201%20on:%20'+document.domain)</link>
+      <description><![CDATA[
+↑↑↑ To do something awesome click a link above ↑↑↑
+                ]]></description>
+    </item>
+  </channel>
+</rss>
